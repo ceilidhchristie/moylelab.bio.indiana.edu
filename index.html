@@ -29,8 +29,9 @@ header {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding-top: 12px;
-  padding-bottom: 8px;
+  padding: 1rem 1.25rem;
+  background: var(--panel-strong);
+  color: #fff;
 }
 
 .header-left {
@@ -39,9 +40,9 @@ header {
   gap: 0.4rem;
 }
 
-h1 { margin: 0; font-size: clamp(2.25rem,4vw,3.3rem); line-height:1.1; color:var(--ink); background:var(--panel-strong); display:inline-block; padding:0.2em 0.45em 0.18em; }
+h1 { margin: 0; font-size: clamp(2.25rem,4vw,3.3rem); line-height:1.1; color:inherit; background:none; display:inline-block; padding:0; }
 
-.tagline { margin: 0.5rem 0 1rem; font-size: clamp(1.2rem,2vw,1.8rem); line-height:1.35; color:var(--muted); font-weight:500; background:var(--panel-strong); display:inline-block; padding:0.2em 0.6em; }
+.tagline { margin: 0.5rem 0 1rem; font-size: clamp(1.2rem,2vw,1.8rem); line-height:1.35; color:inherit; font-weight:500; background:none; display:inline-block; padding:0; }
 
 nav { margin: 0; }
 
@@ -55,13 +56,13 @@ nav { margin: 0; }
 }
 
 .nav-list li {
-  background: var(--nav);
+  background: transparent;
   padding: 0.35rem 0.65rem;
   border-radius: 6px;
   font-weight: 600;
 }
 
-.nav-list a { color: var(--ink); text-decoration: none; }
+.nav-list a { color: inherit; text-decoration: none; }
 
 @media (max-width: 700px) {
   header { flex-direction: column; align-items: flex-start; }
@@ -96,7 +97,7 @@ nav { margin: 0; }
         <h2 id="about-heading">About the Moyle Lab</h2>
         <div class="feature">
           <img src="5_fruits.jpg" alt="Five fruits">
-          <p>We study the genetics and genomics of adaptation and speciation, to understand the mechanisms that create new trait variation and new species. Using both model and non-model systems, we ask how organisms diversify, how ecological interactions shape evolutionary trajectories, and how new species arise in the face of ongoing gene flow and environmental change.</p>
+          <p>We study the genetics and genomics of adaptation and speciation, to understand the mechanisms that create new trait variation and new species. Using both model and non-model systems, we are interested in how organisms diversify, how ecological interactions shape evolutionary trajectories, and how new species arise in the face of ongoing gene flow and environmental change.</p>
         </div>
 
         <div class="feature" style="margin-top: 1.5rem;">
